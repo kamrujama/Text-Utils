@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import './App.css';
 import Alert from './components/Alert';
 import About from './components/About';
+import HomePage from './components/HomePage';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import { Routes, Route } from "react-router-dom";
+
 
 
 function App() {
@@ -67,14 +69,20 @@ function App() {
         {/* Alert component */}
         <Alert  alertMsg={alert} />
 
+      
+
         {/* Text form component */}
           {/* <TextForm showAlert = {showAlert} heading = "Enter the text to analyze" mode={mode} /> */}
         
         {/* About Component */}
           {/* <About/> */}
+        
+        {/* <HomePage /> */}
 
         <Routes>
-          <Route path="/" element={<TextForm showAlert = {showAlert} heading = "Enter the text to analyze" mode={mode} />} />
+         
+          <Route path="/HomePage" element={<HomePage mode={mode} />} />
+          <Route path="/textForm" element={<TextForm showAlert = {showAlert} heading = "Enter the text to analyze" mode={mode} />} />
           <Route path="/about" element={<About />} />
         </Routes>
       
