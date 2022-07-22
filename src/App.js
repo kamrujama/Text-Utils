@@ -6,6 +6,7 @@ import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -94,6 +95,8 @@ function App() {
         />
         <Route path="/about" element={<About />} />
       </Routes>
+
+      <Footer/>
       {/* </Router> */}
     </>
   );

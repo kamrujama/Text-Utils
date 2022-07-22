@@ -16,7 +16,7 @@ export default function About() {
                     <img src={pic} alt="" />
                 </div>
                 <div className="information">
-                <h2>Kamrujama Ansari</h2><span>Software Developer</span>
+                <h2>Kamrujama Ansari</h2><span>Full Stack Developer</span>
                 </div>
             </div>
         </div>
